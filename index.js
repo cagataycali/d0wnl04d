@@ -5,8 +5,8 @@ var colors = require('colors');
 
 var download = function(uri, filename, callback, err) {
   request.head(uri, function (err, res, body) {
-    console.log(colors.gray('content-type:', res.headers['content-type']));
-    console.log(colors.gray('content-length:', res.headers['content-length']));
+    // console.log(colors.gray('content-type:', res.headers['content-type']));
+    // console.log(colors.gray('content-length:', res.headers['content-length']));
     if (err) {
       error(err)
     }
