@@ -19,7 +19,7 @@ module.exports = function(obj) {
     download(obj.url, obj.name, function () {
       resolve(obj.name);
     }, function(error) {
-      reject(err);
+      reject(error);
     });
   });
 }
