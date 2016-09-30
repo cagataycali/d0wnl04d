@@ -8,7 +8,7 @@ var download = function(uri, filename, callback, err) {
     // console.log(colors.gray('content-type:', res.headers['content-type']));
     // console.log(colors.gray('content-length:', res.headers['content-length']));
     if (err) {
-      error(err)
+      console.log(err)
     }
     request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
   });
