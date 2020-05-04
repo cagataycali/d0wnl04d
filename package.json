@@ -4,7 +4,9 @@
   "description": "Download what ever you want easily.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
   "dependencies": {
     "async": "^2.0.1",
     "colors": "^1.1.2",
-    "request": "^2.74.0"
-  }
+    "request": "^2.74.0",
+    "snyk": "^1.317.0"
+  },
+  "snyk": true
 }
