@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/cagataycali/d0wnl04d#readme",
   "dependencies": {
-    "async": "^2.0.1",
+    "async": "^3.2.2",
     "colors": "^1.1.2",
     "request": "^2.74.0"
   }
